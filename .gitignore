@@ -1,0 +1,17 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore TypeScript/JavaScript build output
+dist/
+
+# Ignore local environment files
+.env.local
+.env
+
+# Ignore logs and temporary files
+*.log
+*.swp
+
+# Ignore package manager lock files
+yarn.lock
+package-lock.json
