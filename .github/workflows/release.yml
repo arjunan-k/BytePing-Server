@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   changelog:
-    if: github.repository == 'EddieHubCommunity/BioDrop'
+    if: github.repository == 'arjunan-k/BytePing-Server'
     runs-on: ubuntu-latest
 
     steps:
