@@ -4,8 +4,7 @@ node_modules/
 # Ignore TypeScript/JavaScript build output
 dist/
 
-# Ignore local environment files
-.env.local
+# Ignore environment files
 .env
 
 # Ignore logs and temporary files
