@@ -1,8 +1,26 @@
 import express from "express";
 import Chats from "./data/data";
 import dotenv from "dotenv";
+import cors from "cors";
 
 const app = express();
+
+const whitelist = ["http://localhost:3000", "https://your-production-app.com"];
+
+const corsOptions = {
+  origin: (origin: any, callback: any) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  optionsSuccessStatus: 204,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 dotenv.config();
 
 app.get("/", (req, res) => {
