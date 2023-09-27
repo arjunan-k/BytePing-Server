@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.0.0...v1.1.0) (2023-09-27)
+
+
+### Features
+
+* **schema:** build mongodb database schema using mongoose ([#2](https://github.com/arjunan-k/BytePing-Server/issues/2)) ([e375f46](https://github.com/arjunan-k/BytePing-Server/commit/e375f465bc9c90a5ec2a2973ef48cb6faacbafa5))
+
 # 1.0.0 (2023-09-25)
 
 
