@@ -2,6 +2,7 @@ import express from "express";
 import Chats from "./data/data";
 import dotenv from "dotenv";
 import cors from "cors";
+import connectDB from "./config/db";
 
 const app = express();
 
@@ -22,6 +23,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 dotenv.config();
+connectDB();
 
 app.get("/", (req, res) => {
   res.send("Apisdvndsb is running");
