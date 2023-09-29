@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.1.0...v1.2.0) (2023-09-29)
+
+
+### Features
+
+* **auth:** create api for login and register along with jwt ([d6b45e6](https://github.com/arjunan-k/BytePing-Server/commit/d6b45e65b0a4eedd00685204b93605d80b4a3216))
+
 # [1.1.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.0.0...v1.1.0) (2023-09-27)
 
 
