@@ -3,6 +3,7 @@ import Chats from "./data/data";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db";
+import userRoutes from "./routes/userRoutes";
 
 const app = express();
 
@@ -25,9 +26,13 @@ app.use(cors(corsOptions));
 dotenv.config();
 connectDB();
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
-  res.send("Apisdvndsb is running");
+  res.send("API is Running Sucessfully");
 });
+
+app.use("/api/user", userRoutes);
 
 app.get("/api/chats", (req, res) => {
   res.send(Chats);

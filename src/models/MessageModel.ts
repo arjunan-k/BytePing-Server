@@ -1,6 +1,6 @@
 import mongoose, { Model, Document } from "mongoose";
-import Chat, { IChat } from "./ChatModel";
-import User, { IUser } from "./UserModel";
+import Chat, { IChat } from "./chatModel";
+import User, { IUser } from "./userModel";
 
 export interface IMessage extends Document {
   sender: IUser | null;
