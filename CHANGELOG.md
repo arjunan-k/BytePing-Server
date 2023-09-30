@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.2.0...v1.3.0) (2023-09-30)
+
+
+### Features
+
+* **login:** use bcrypt hash to secure password in mongodb ([5cdd0e7](https://github.com/arjunan-k/BytePing-Server/commit/5cdd0e721fd546760adc20d9c34fdc98ee7cbdea))
+
 # [1.2.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.1.0...v1.2.0) (2023-09-29)
 
 
