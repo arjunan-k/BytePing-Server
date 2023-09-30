@@ -4,6 +4,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./config/db";
 import userRoutes from "./routes/userRoutes";
+import errorHandler from "./middleware/errorHandler";
+import notFound from "./middleware/notFound";
 
 const app = express();
 
@@ -42,6 +44,9 @@ app.get("/api/chats/:id", (req, res) => {
   const id = req.params.id;
   res.send(Chats.find((chat) => chat._id === id));
 });
+
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
