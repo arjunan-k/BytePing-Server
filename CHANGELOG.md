@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/arjunan-k/BytePing-Server/compare/v1.3.0...v1.3.1) (2023-10-01)
+
+
+### Bug Fixes
+
+* **auth:** fix match password functionality using async await ([a5bd54c](https://github.com/arjunan-k/BytePing-Server/commit/a5bd54cab69e268889c620701b24dbca4a39e279))
+
 # [1.3.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.2.0...v1.3.0) (2023-09-30)
 
 
