@@ -37,7 +37,16 @@ app.get("/", (req, res) => {
 app.use("/api/user", userRoutes);
 
 app.get("/api/chats", (req, res) => {
-  res.send(Chats);
+  const name = req.query.name as string;
+  if (name) {
+    const trimmedName = name.replace(/\s/g, "").toLowerCase();
+    const filteredChats = Chats.filter((chat) =>
+      chat.chatName.replace(/\s/g, "").toLowerCase().includes(trimmedName)
+    );
+    res.send(filteredChats);
+  } else {
+    res.send(Chats);
+  }
 });
 
 app.get("/api/chats/:id", (req, res) => {
