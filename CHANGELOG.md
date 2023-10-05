@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.3.1...v1.4.0) (2023-10-04)
+
+
+### Features
+
+* **api:** create api route for filtering users based of search query ([88b25bd](https://github.com/arjunan-k/BytePing-Server/commit/88b25bd71b8208f54dbf93429a92c4110e1f6586))
+
 ## [1.3.1](https://github.com/arjunan-k/BytePing-Server/compare/v1.3.0...v1.3.1) (2023-10-01)
 
 
