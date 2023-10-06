@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.4.0...v1.5.0) (2023-10-05)
+
+
+### Features
+
+* **auth:** add auth handler for allusers ([bbd3a60](https://github.com/arjunan-k/BytePing-Server/commit/bbd3a60ef64f1a1fba96f43851c5abae1ae0aa05))
+
 # [1.4.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.3.1...v1.4.0) (2023-10-04)
 
 
