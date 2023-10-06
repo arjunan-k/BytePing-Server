@@ -6,6 +6,7 @@ import connectDB from "./config/db";
 import userRoutes from "./routes/userRoutes";
 import errorHandler from "./middleware/errorHandler";
 import notFound from "./middleware/notFound";
+import chatRoutes from "./routes/chatRoutes";
 
 const app = express();
 
@@ -35,9 +36,10 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/user", userRoutes);
+app.use("/api/chat", chatRoutes);
 
-app.get("/api/chats", (req, res) => {
-  const name = req.query.name as string;
+app.get("/api/dummy/chats", (req, res) => {
+  const name: string = req.query.name as string;
   if (name) {
     const trimmedName = name.replace(/\s/g, "").toLowerCase();
     const filteredChats = Chats.filter((chat) =>
@@ -49,7 +51,7 @@ app.get("/api/chats", (req, res) => {
   }
 });
 
-app.get("/api/chats/:id", (req, res) => {
+app.get("/api/dummy/chats/:id", (req, res) => {
   const id = req.params.id;
   res.send(Chats.find((chat) => chat._id === id));
 });
