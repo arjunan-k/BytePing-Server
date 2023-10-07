@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.5.0...v1.6.0) (2023-10-06)
+
+
+### Features
+
+* **chat:** create api route and functionalities for accessing all chats ([9143935](https://github.com/arjunan-k/BytePing-Server/commit/91439352b89ba736619dcc5b22f2a65739defb16))
+
 # [1.5.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.4.0...v1.5.0) (2023-10-05)
 
 
