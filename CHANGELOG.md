@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.6.0...v1.7.0) (2023-10-07)
+
+
+### Features
+
+* **api:** create api routes for crud ops in group chat ([bc6c639](https://github.com/arjunan-k/BytePing-Server/commit/bc6c63919ad743a34ebb1f3be958dbae5b2ad873))
+
 # [1.6.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.5.0...v1.6.0) (2023-10-06)
 
 
