@@ -7,6 +7,7 @@ import userRoutes from "./routes/userRoutes";
 import errorHandler from "./middleware/errorHandler";
 import notFound from "./middleware/notFound";
 import chatRoutes from "./routes/chatRoutes";
+import messageRoutes from "./routes/messageRoutes";
 
 const app = express();
 
@@ -37,6 +38,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
+app.use("/api/message", messageRoutes);
 
 app.get("/api/dummy/chats", (req, res) => {
   const name: string = req.query.name as string;
