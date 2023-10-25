@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.7.0...v1.8.0) (2023-10-25)
+
+
+### Features
+
+* **message:** create route for sending and fetching chat messages ([f4bcd07](https://github.com/arjunan-k/BytePing-Server/commit/f4bcd073f0306a19511c34f6f7bc54d5160a548a))
+
 # [1.7.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.6.0...v1.7.0) (2023-10-07)
 
 
