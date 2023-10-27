@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.8.0...v1.9.0) (2023-10-27)
+
+
+### Features
+
+* **message:** create api controller for fetching all messages in a chat ([fb4e3c1](https://github.com/arjunan-k/BytePing-Server/commit/fb4e3c1963294e2eb4d5b5ef9edeae6095ba30e3))
+
 # [1.8.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.7.0...v1.8.0) (2023-10-25)
 
 
