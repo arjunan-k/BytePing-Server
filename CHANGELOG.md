@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.9.0...v1.10.0) (2023-11-03)
+
+
+### Features
+
+* **type:** add types for send and fetch message model schema ([ad6b8e9](https://github.com/arjunan-k/BytePing-Server/commit/ad6b8e9b981c2bc6abb510f38385406caa518bdf))
+
 # [1.9.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.8.0...v1.9.0) (2023-10-27)
 
 
