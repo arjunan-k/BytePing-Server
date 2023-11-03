@@ -19,17 +19,17 @@ const sendMessage = asyncHandler(async (req: Request, res: Response) => {
   };
 
   try {
-    var message = await Message.create(newMessage);
+    let message = await Message.create(newMessage);
     message = await message.populate("sender", "name pic");
     message = await message.populate("chat");
-    let newMessageFormat = await User.populate(message, {
+    let ResponseMessage = await User.populate(message, {
       path: "chat.users",
       select: "name pic email",
     });
     await Chat.findByIdAndUpdate(req.body.chatId, {
-      latestMessage: newMessageFormat,
+      latestMessage: ResponseMessage,
     });
-    res.status(200).json({ message: newMessageFormat });
+    res.status(200).json(ResponseMessage);
   } catch (error) {
     res.status(400).json({ message: "Failed to send message" });
     throw new Error(`Failed to send message ${error}`);
