@@ -8,6 +8,7 @@ import errorHandler from "./middleware/errorHandler";
 import notFound from "./middleware/notFound";
 import chatRoutes from "./routes/chatRoutes";
 import messageRoutes from "./routes/messageRoutes";
+import { Server } from "socket.io";
 
 const app = express();
 
@@ -63,6 +64,22 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT || 5000, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+});
+
+const SocketIO = new Server(server, { pingTimeout: 60000, cors: corsOptions });
+
+SocketIO.on("connection", (socket) => {
+  console.log("Connected to socket.io");
+
+  socket.on("setup", (userData) => {
+    socket.join(userData?._id);
+    console.log(userData?._id);
+    socket.emit("connected");
+  });
+
+  socket.on("disconnect", () => {
+    console.log("User disconnected");
+  });
 });
