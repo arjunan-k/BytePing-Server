@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.10.0...v1.11.0) (2023-11-06)
+
+
+### Features
+
+* **socket:** create websocket connection b/w client and server using socket.io ([13a7e0b](https://github.com/arjunan-k/BytePing-Server/commit/13a7e0bdd68d25f0ffb926b3a6dac90e00062537))
+
 # [1.10.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.9.0...v1.10.0) (2023-11-03)
 
 
