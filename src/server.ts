@@ -75,8 +75,8 @@ SocketIO.on("connection", (socket) => {
   console.log("Connected to socket.io");
 
   socket.on("setup", (userData) => {
-    socket.join(userData?._id);
-    console.log(userData?._id);
+    socket.join(userData._id);
+    console.log(userData._id);
     socket.emit("connected");
   });
 
@@ -85,9 +85,17 @@ SocketIO.on("connection", (socket) => {
     console.log(`User Joined Room: ${room}`);
   });
 
+  socket.on("typing", (room) => {
+    socket.in(room).emit("typing");
+  });
+
+  socket.on("stop typing", (room) => {
+    socket.in(room).emit("stop typing");
+  });
+
   socket.on("new message", (newMessageReceived) => {
     let chat = newMessageReceived.chat;
-    if (!chat.users) return console.log("chat.users is undefined");
+    if (!chat.users) return console.log("chat.users not defined");
 
     chat.users.forEach((user: User) => {
       if (user._id === newMessageReceived.sender._id) return;
@@ -96,7 +104,8 @@ SocketIO.on("connection", (socket) => {
     });
   });
 
-  socket.on("disconnect", () => {
-    console.log("User disconnected");
+  socket.off("setup", (userData) => {
+    console.log("User Disconnected");
+    socket.leave(userData._id);
   });
 });
