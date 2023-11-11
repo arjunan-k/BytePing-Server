@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.11.0...v1.12.0) (2023-11-08)
+
+
+### Features
+
+* **room:** create socket for room chat ([315e873](https://github.com/arjunan-k/BytePing-Server/commit/315e8735a5577896a3ae494cf5d0d6cdba11beb2))
+
 # [1.11.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.10.0...v1.11.0) (2023-11-06)
 
 
