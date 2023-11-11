@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.12.0...v1.13.0) (2023-11-11)
+
+
+### Features
+
+* **websocket:** create room in socket for typing indicator ([cbf198d](https://github.com/arjunan-k/BytePing-Server/commit/cbf198d491325564ce6d08e0935384892c82f8f1))
+
 # [1.12.0](https://github.com/arjunan-k/BytePing-Server/compare/v1.11.0...v1.12.0) (2023-11-08)
 
 
