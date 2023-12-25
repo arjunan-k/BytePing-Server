@@ -8,7 +8,6 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "type": "module",
   "scripts": {
     "start": "nodemon src/server.ts",
     "commit": "git-cz",
