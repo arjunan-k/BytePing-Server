@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "ES2015",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",
@@ -13,6 +13,5 @@
     "experimentalSpecifierResolution": "node"
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"],
-  "lib": ["ES5"]
+  "exclude": ["node_modules"]
 }
