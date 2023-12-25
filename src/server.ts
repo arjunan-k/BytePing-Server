@@ -13,7 +13,11 @@ import { User } from "./types";
 
 const app = express();
 
-const whitelist = ["http://localhost:3000", "https://your-production-app.com"];
+const whitelist = [
+  "http://localhost:3000",
+  "https://your-production-app.com",
+  "https://byteping.vercel.app/",
+];
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
