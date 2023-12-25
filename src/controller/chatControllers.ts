@@ -1,6 +1,6 @@
 import asyncHandler from "express-async-handler";
-import Chat from "../models/chatModel";
-import User from "../models/userModel";
+import Chat from "../models/ChatModel";
+import User from "../models/UserModel";
 import { Error } from "mongoose";
 
 const accessChat = asyncHandler(async (req, res) => {

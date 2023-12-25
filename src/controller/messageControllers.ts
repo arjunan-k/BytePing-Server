@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import asyncHandler from "express-async-handler";
 import Message from "../models/messageModel";
-import User from "../models/userModel";
-import Chat from "../models/chatModel";
+import User from "../models/UserModel";
+import Chat from "../models/ChatModel";
 
 const sendMessage = asyncHandler(async (req: Request, res: Response) => {
   const { content, chatId } = req.body;

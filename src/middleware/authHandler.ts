@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import asyncHandler from "express-async-handler";
 import jwt, { Secret } from "jsonwebtoken";
-import User, { IUser } from "../models/userModel";
+import User, { IUser } from "../models/UserModel";
 
 declare module "express-serve-static-core" {
   export interface Request {

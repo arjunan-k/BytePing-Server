@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import User from "../models/userModel";
+import User from "../models/UserModel";
 
 const allUsers = asyncHandler(async (req, res) => {
   const keyword = req.query.search
