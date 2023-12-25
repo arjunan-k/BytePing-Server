@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES6",
     "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./",
-    "strict": true,
+    "baseUrl": "./src",
+    "strict": false,
     "esModuleInterop": true
   },
   "ts-node": {
