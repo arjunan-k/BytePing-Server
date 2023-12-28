@@ -14,9 +14,9 @@ import { User } from "./types";
 const app = express();
 
 const whitelist = [
-  "http://localhost:3000",
-  "https://your-production-app.com",
   "https://byteping.vercel.app",
+  "https://your-production-app.com",
+  "http://localhost:3000",
 ];
 
 const corsOptions = {
@@ -32,7 +32,8 @@ const corsOptions = {
   credentials: true,
 };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 dotenv.config();
 connectDB();
 
