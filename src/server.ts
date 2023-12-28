@@ -16,7 +16,7 @@ const app = express();
 const whitelist = [
   "http://localhost:3000",
   "https://your-production-app.com",
-  "https://byteping.vercel.app/",
+  "https://byteping.vercel.app",
 ];
 
 const corsOptions = {
