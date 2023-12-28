@@ -16,9 +16,9 @@ const messageRoutes_1 = __importDefault(require("./routes/messageRoutes"));
 const socket_io_1 = require("socket.io");
 const app = (0, express_1.default)();
 const whitelist = [
-    "http://localhost:3000",
+    "https://byteping.vercel.app",
     "https://your-production-app.com",
-    "https://byteping.vercel.app/",
+    "http://localhost:3000",
 ];
 const corsOptions = {
     origin: (origin, callback) => {
@@ -33,7 +33,8 @@ const corsOptions = {
     optionsSuccessStatus: 204,
     credentials: true,
 };
-app.use((0, cors_1.default)(corsOptions));
+// app.use(cors(corsOptions));
+app.use((0, cors_1.default)());
 dotenv_1.default.config();
 (0, db_1.default)();
 app.use(express_1.default.json());
